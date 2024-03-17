@@ -12,15 +12,15 @@ fun Application.configureRouting() {
         }
         get("/updateGlobalVariable1"){
             ++globalVariable
-            call.respondText("\nCurrent value (path1): $globalVariable")
+            call.respondText("\nCurrent value (in route 1): $globalVariable")
         }
         get("/updateGlobalVariable2"){
             ++globalVariable
-            call.respondText("\nCurrent value (path2): $globalVariable")
+            call.respondText("\nCurrent value (in route 2): $globalVariable")
         }
         get("/updateGlobalVariable3"){
             ++globalVariable
-            call.respondText("\nCurrent value (path3): $globalVariable")
+            call.respondText("\nCurrent value (in route 3): $globalVariable")
         }
         get("/getGlobalVariableValueAndReset"){
             val globalVariableValue = globalVariable

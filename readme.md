@@ -7,3 +7,6 @@ How to use?
 
 Configurations available:
 > Set `numberOfCoroutines` to be executed [here](src/main/resources/local.conf)
+
+Outcome after execution of `RaceConditionChecker`:
+![img.png](img.png)
