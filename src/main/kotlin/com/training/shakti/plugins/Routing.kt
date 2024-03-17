@@ -22,8 +22,10 @@ fun Application.configureRouting() {
             ++globalVariable
             call.respondText("\nCurrent value (path3): $globalVariable")
         }
-        get("/finalGlobalVariableValue"){
-            call.respondText("\nFinal value of Global variable: $globalVariable")
+        get("/getGlobalVariableValueAndReset"){
+            val globalVariableValue = globalVariable
+            globalVariable = 0
+            call.respondText("\nFinal value of Global variable: $globalVariableValue")
         }
     }
 }

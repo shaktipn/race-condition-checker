@@ -18,4 +18,4 @@ fun Application.module() {
 
 internal val config: Config = ConfigFactory.load("local.conf")
 internal const val NUMBER_OF_ROUTES = 3
-internal var globalVariable = 0 //we will try to update this in coroutines
+internal var globalVariable = 0 //we will update this variable in coroutines

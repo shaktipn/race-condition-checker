@@ -8,9 +8,7 @@ import kotlin.time.Duration
 import kotlin.time.measureTime
 
 fun main() {
-    //println("Global var = ${globalVariable}")
-    val numberOfCoroutines = config.getInt("coroutineConfig.numberOfCoroutine")
-    //take input from user
+    val numberOfCoroutines = config.getInt("coroutineConfig.numberOfCoroutines")
     println(
         """How do you want to test the race-condition?
         |1. create N Coroutines for each route
@@ -28,7 +26,7 @@ fun main() {
         }
     showDurationAndResponse(
         duration = timeTakenToExecuteAllCoroutines,
-        url = "http://0.0.0.0:8080/finalGlobalVariableValue"
+        url = "http://0.0.0.0:8080/getGlobalVariableValueAndReset"
     )
 }
 
